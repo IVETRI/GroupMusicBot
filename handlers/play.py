@@ -107,7 +107,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="🔊 Channel",
-                        url="https://t.me/Infinity_BOTs")
+                        url="https://t.me/disneygrou")
                    
                 ]
             ]
@@ -124,7 +124,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/a4fa687ed647cfef52402.jpg"
+        thumb_name = "https://telegra.ph/file/f08b32d4125575935a869.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -133,7 +133,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="🔊 Channel",
-                            url=f"https://t.me/Infinity_BOTs")
+                            url=f"https://t.me/disneygrou")
 
                     ]
                 ]
@@ -169,7 +169,7 @@ async def play(_, message: Message):
                 )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/a4fa687ed647cfef52402.jpg"
+            thumb_name = "https://telegra.ph/file/f08b32d4125575935a869.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -244,9 +244,9 @@ async def play(_, message: Message):
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
-        photo="final.png",
+        photo="https://telegra.ph/file/91bcd9580a21763dfad7a.jpg",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} via DaisyX Music 😜".format(
+        caption="▶️ **Playing** here the song requested by {} via Disney Team Music Streamer Bot 😜".format(
         message.from_user.mention()
         ),
     )
