@@ -99,7 +99,7 @@ async def play(_, message: Message):
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
-        photo=thumb_name,
+        photo=https://telegra.ph/file/91bcd9580a21763dfad7a.jpg,
         reply_markup=keyboard,
         caption="▶️ **Playing** here the song requested by {} via Disney Team Music Streamer Bot 😜".format(
         message.from_user.mention()
