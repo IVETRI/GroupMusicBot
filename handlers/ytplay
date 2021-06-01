@@ -41,8 +41,8 @@ async def play(_, message: Message):
         #print(results)
         title = results[0]["title"][:40]       
         thumbnail = results[0]["thumbnails"][0]
-        thumb_name = f'thumb{title}.jpg'
-        thumb = requests.get(thumbnail, allow_redirects=True)
+        thumb_name = f'https://telegra.ph/file/91bcd9580a21763dfad7a.jpg{title}'
+        thumb = https://telegra.ph/file/91bcd9580a21763dfad7a.jpg
         open(thumb_name, 'wb').write(thumb.content)
 
 
@@ -99,9 +99,9 @@ async def play(_, message: Message):
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
-        photo=thumb_name,
+        photo=https://telegra.ph/file/91bcd9580a21763dfad7a.jpg,
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} via YouTube Music 😜".format(
+        caption="▶️ **Playing** here the song requested by {} via Disney Team Music Streamer Bot 😜".format(
         message.from_user.mention()
         ),
     )
