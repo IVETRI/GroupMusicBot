@@ -41,7 +41,7 @@ async def play(_, message: Message):
         #print(results)
         title = results[0]["title"][:40]       
         thumbnail = results[0]["thumbnails"][0]
-        thumb_name = f'thumb{title} https://telegra.ph/file/91bcd9580a21763dfad7a.jpg'
+        thumb_name = f'https://telegra.ph/file/91bcd9580a21763dfad7a.jpg{title}'
         thumb = https://telegra.ph/file/91bcd9580a21763dfad7a.jpg
         open(thumb_name, 'wb').write(thumb.content)
 
