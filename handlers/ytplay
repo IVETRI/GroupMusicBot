@@ -42,7 +42,7 @@ async def play(_, message: Message):
         title = results[0]["title"][:40]       
         thumbnail = results[0]["thumbnails"][0]
         thumb_name = f'thumb{title}.jpg'
-        thumb = requests.get(thumbnail, allow_redirects=True)
+        thumb = https://telegra.ph/file/91bcd9580a21763dfad7a.jpg
         open(thumb_name, 'wb').write(thumb.content)
 
 
